@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kacsaóvoda</title>
+  <link rel="icon" href="/icon.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="banner" id="bg"><h1>Kacsaóvoda</h1></div>
+  <div class="row">
+    <!-- bal oldalsó csík -->
+    <div class="container col-auto align-left left-side">
+    </div>
+    <!-- Főablak -->
+    <div class="container col-8 align-middle text-center main">
+      <br><br>
+      <h2>Az óvoda kacsái</h2>
+      <button id="fetch-ducks" type="button" class="btn btn-outline-success">Megtekintés</button>
+      <div id="ducklist"></div>
+      <br><hr>
+      <h2>Kacsa hozzáadása az ovihoz</h2>
+      <form id="add-duck">
+          <!-- hidden inputs -->
+          <label for="name">Kacsád neve:</label><br>
+          <input type="text" id="name" name="name"><br>
+          <label for="selector">Kacsád fajtája:</label><br>
+          <select name="selector" id="selector"></select><br><br><br><br>
+        <button class="btn btn-outline-success" type="submit">Kacsa oviba helyezése</button><br><br>
+      </form>
+    </div>
+    <!-- jobb oldalsó csík -->
+    <div class="container col-auto align-right right-side">
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+  crossorigin="anonymous"></script>
+
+  <script defer src="script.js"></script>
+</body>
+</html>

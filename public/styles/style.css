@@ -1,0 +1,63 @@
+html{
+    margin: auto;
+    font-family:'Times New Roman', Times, serif;
+}
+body{
+    text-align: center;
+    background-color:blanchedalmond;
+}
+.banner h1{
+    color: white;
+    font-size: 100px;
+    margin: auto;
+}
+h2{
+    color: #1c7431;
+}
+.banner {
+    height: 200px;
+    background-color: lightblue;
+    background: url('/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    isolation: isolate;
+    opacity: 1;
+}
+.banner::after{
+    content: '';
+    position: absolute;
+    background: black;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.4;
+    transition: all 0.5s ease-in-out;
+}
+img{
+    border: solid 2px black;
+    max-width: auto;
+    max-height: 100px;
+}
+.main{
+    background-color: burlywood;
+}
+.left-side{
+    background-color: blanchedalmond;
+
+}
+.right-side{
+    background-color: blanchedalmond;
+}
+.card{
+    border: solid 1px gray;
+    background-color: wheat;
+}
+input,select,option{
+    background-color: bisque;
+    border: #1c7431 solid 1.5px;
+    color: #1c7431;
+}
+label{
+    color: #1c7431; 
+}
